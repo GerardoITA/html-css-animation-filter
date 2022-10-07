@@ -1,4 +1,4 @@
-[class*="square"] {
+[class*="square"], .ex-7-img {
     transition: 2s;
 }
 .ex-1-square:hover {
@@ -25,6 +25,131 @@
 .ex-6-img:hover {
     filter: grayscale(1);    
 }
-.ex-7-img {
+.ex-7-img:hover {
+    filter: grayscale(1) opacity(0.3)
+}
+.ex-8-img:hover {
+    filter: brightness(1.5) contrast(0.5) ;
+    border-radius: 25%;
+}
+.ex-9-img:hover {
+    filter: opacity(0.5) contrast(0.1);
+    border-radius: 25%;
+    height: 300px;
+    width: auto;
+}
+.ex-10-icon {
+    animation: loading 0.001s linear 0s infinite forwards;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.ex-11-icon {
+    animation: loading2 2s linear 0s infinite forwards;
+}
+@keyframes loading2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+}
+.ex-12-button {
+    position: relative;
+}
+.ex-12-top-white {
+    animation: button1 8s linear 0s infinite forwards;
+    position: absolute;
+}
+@keyframes button1 {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    50% {
+        top: -10px;
+        left: 50%;
+    }
     
+}
+.ex-12-bottom-white {
+    position: absolute;
+    animation: button2 4s linear 0s infinite forwards;
+}
+@keyframes button2 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+        }
+    
+        50% {
+        bottom: -10px;
+        right: 50%;
+        }
+}
+.ex-13-button {
+    position: relative;
+}
+
+.ex-13-top-white {
+    animation: button3 10s linear 0s infinite forwards;
+    position: absolute;
+}
+
+@keyframes button3 {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    25% {
+        top: -10px;
+        left: 90%;
+    }
+    40% {
+        top: 40px;
+        left: 90%;
+    }
+    50% {
+        top: 40px;
+        left: 80%;
+    }
+    75% {
+        top: 40px;
+        left: -10%%;
+    }
+    90% {
+        top: -10px;
+        left: -10%;
+    }
+    100% {
+    
+        top: -10px;
+        left: 10%;
+          
+    }
+
+}
+
+.ex-13-bottom-white {
+    position: absolute;
+    animation: button4 4s linear 0s infinite forwards;
+}
+
+@keyframes button4 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    50% {
+        bottom: -10px;
+        right: 50%;
+    }
 }
