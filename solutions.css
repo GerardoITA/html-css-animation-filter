@@ -1,4 +1,4 @@
-* {
+[class*="square"] {
     transition: 2s;
 }
 .ex-1-square:hover {
@@ -12,4 +12,19 @@
 }
 .ex-4-square:hover {
     background-color: rgba(255, 0, 0, 0);
+}
+.ex-5-square:hover {
+    height: 75px;
+    width: 75px;
+}
+.ex-5-square:active {
+    height: 25px;
+    width: 25px;
+
+}
+.ex-6-img:hover {
+    filter: grayscale(1);    
+}
+.ex-7-img {
+    
 }
